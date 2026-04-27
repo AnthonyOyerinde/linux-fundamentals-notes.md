@@ -1,0 +1,47 @@
+# Linux Fundamentals
+
+## Commands I learned
+- whoami → shows current user
+- ls → lists files
+- pwd → shows current directory
+
+## What I did
+Used `whoami` to confirm I was logged in as a normal user.
+
+whoami      # current user
+id          # user + group info
+hostname    # machine name
+uname -a    # system info
+
+pwd         # where am I
+ls          # list files
+ls -la      # show hidden + details
+cd folder   # move into folder
+cd ..       # go back
+
+cat file.txt        # read file
+less file.txt       # scroll file
+head file.txt       # first lines
+tail file.txt       # last lines
+cp file1 file2      # copy
+mv file1 file2      # move/rename
+rm file.txt         # delete
+
+find / -name file.txt 2>/dev/null
+grep "word" file.txt
+
+ls -l
+chmod +x file.sh
+chmod 777 file.txt
+
+## What I Look For First
+- Current user (whoami)
+- Sudo permissions (sudo -l)
+- SUID files
+- Interesting files (ls -la)
+- System info (uname -a)
+
+## Common Strategy
+1. Enumerate everything
+2. Look for misconfigurations
+3. Try privilege escalation
